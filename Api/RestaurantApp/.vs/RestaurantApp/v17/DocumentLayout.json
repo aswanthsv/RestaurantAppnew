@@ -1,0 +1,971 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\restaurantapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\restaurantapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\orderfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\orderfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\topddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\topddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\topdishdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\topdishdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\models\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\models\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\models\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\models\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\services\\menuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\services\\menuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\interfaces\\imenuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\interfaces\\imenuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\controllers\\personalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\controllers\\personalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\interfaces\\ipersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\interfaces\\ipersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\services\\personalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\services\\personalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\services\\tableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\services\\tableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\interfaces\\itableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\interfaces\\itableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\services\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\services\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20260316153322_ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RestaurantApp\\Migrations\\20260316153322_ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\personaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\personaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\tabledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\tabledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20260316073742_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RestaurantApp\\Migrations\\20260316073742_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\controllers\\billingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\controllers\\billingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\interfaces\\ibillingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\interfaces\\ibillingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\dashboardtabledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\dashboardtabledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\ordersummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\ordersummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\dailyordersummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\dailyordersummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\menuitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\menuitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\migrations\\20251023120818_addordertables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\migrations\\20251023120818_addordertables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\models\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\models\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\dailysalessummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\dailysalessummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\models\\billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\models\\billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\next_features_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\next_features_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\decide_now.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\decide_now.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\migrations\\20251021061138_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\migrations\\20251021061138_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\dtos\\billingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\dtos\\billingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\ready_to_use.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\ready_to_use.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\logging_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\logging_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\restaurantapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\restaurantapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alekh\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-ee49b40a-d6e2-407f-ade8-92eb20bca537.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\choose_next_feature.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\choose_next_feature.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\exceptions\\resourcenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\exceptions\\resourcenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|c:\\users\\alekh\\downloads\\restuarant\\api\\restaurantapp\\restaurantapp\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAD20F5B-414C-4D10-9D03-AAA326445ABA}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RestaurantApp",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\RestaurantApp.csproj",
+              "RelativeDocumentMoniker": "RestaurantApp\\RestaurantApp.csproj",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\RestaurantApp.csproj",
+              "RelativeToolTip": "RestaurantApp\\RestaurantApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-25T10:43:10.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:573068421:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\OrderService.cs",
+              "RelativeToolTip": "RestaurantApp\\Services\\OrderService.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAAKwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:27:07.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "RestaurantApp\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:54:38.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\appsettings.json",
+              "RelativeDocumentMoniker": "RestaurantApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\appsettings.json",
+              "RelativeToolTip": "RestaurantApp\\appsettings.json",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-21T06:00:04.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "RestaurantApp\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\appsettings.Development.json",
+              "RelativeToolTip": "RestaurantApp\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-18T14:34:12.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "RestaurantApp\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:25:46.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\OrderFilterDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\OrderFilterDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\OrderFilterDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\OrderFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T11:04:31.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TopDDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\TopDDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\TopDDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\TopDDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\TopDDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T10:11:14.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Personal.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\Personal.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Models\\Personal.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\Personal.cs",
+              "RelativeToolTip": "RestaurantApp\\Models\\Personal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T16:20:06.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\Table.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Models\\Table.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\Table.cs",
+              "RelativeToolTip": "RestaurantApp\\Models\\Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T02:59:51.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Program.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Program.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Program.cs",
+              "RelativeToolTip": "RestaurantApp\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:02:01.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TopDishDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\TopDishDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\TopDishDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\TopDishDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\TopDishDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T15:43:04.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\OrderItem.cs",
+              "RelativeToolTip": "RestaurantApp\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:55:06.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\Order.cs",
+              "RelativeToolTip": "RestaurantApp\\Models\\Order.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:35:43.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\MenuItem.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Models\\MenuItem.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\MenuItem.cs",
+              "RelativeToolTip": "RestaurantApp\\Models\\MenuItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:33:52.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "RestaurantApp\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA+wBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:43:55.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MenuItemService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\MenuItemService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Services\\MenuItemService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\MenuItemService.cs",
+              "RelativeToolTip": "RestaurantApp\\Services\\MenuItemService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:28:32.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MenuItemController.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\MenuItemController.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Controllers\\MenuItemController.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\MenuItemController.cs",
+              "RelativeToolTip": "RestaurantApp\\Controllers\\MenuItemController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:37:36.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TableController.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\TableController.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Controllers\\TableController.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\TableController.cs",
+              "RelativeToolTip": "RestaurantApp\\Controllers\\TableController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:04:26.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PersonalController.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\PersonalController.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Controllers\\PersonalController.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\PersonalController.cs",
+              "RelativeToolTip": "RestaurantApp\\Controllers\\PersonalController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T16:37:27.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IMenuItemService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\IMenuItemService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Interfaces\\IMenuItemService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\IMenuItemService.cs",
+              "RelativeToolTip": "RestaurantApp\\Interfaces\\IMenuItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:34:57.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TableService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\TableService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Services\\TableService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\TableService.cs",
+              "RelativeToolTip": "RestaurantApp\\Services\\TableService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:49:34.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PersonalService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\PersonalService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Services\\PersonalService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\PersonalService.cs",
+              "RelativeToolTip": "RestaurantApp\\Services\\PersonalService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAApwD8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T16:27:13.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IPersonalService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\IPersonalService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Interfaces\\IPersonalService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\IPersonalService.cs",
+              "RelativeToolTip": "RestaurantApp\\Interfaces\\IPersonalService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T16:25:21.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ITableService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\ITableService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Interfaces\\ITableService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\ITableService.cs",
+              "RelativeToolTip": "RestaurantApp\\Interfaces\\ITableService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:42:44.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BillingService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\BillingService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Services\\BillingService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Services\\BillingService.cs",
+              "RelativeToolTip": "RestaurantApp\\Services\\BillingService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:17:08.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20260316153322_ini.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20260316153322_ini.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Migrations\\20260316153322_ini.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20260316153322_ini.cs",
+              "RelativeToolTip": "RestaurantApp\\Migrations\\20260316153322_ini.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T15:33:22.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PersonalDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\PersonalDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\PersonalDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\PersonalDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\PersonalDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T16:23:07.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TableDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\TableDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\TableDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\TableDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\TableDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:40:25.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20260316073742_initial.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20260316073742_initial.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Migrations\\20260316073742_initial.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20260316073742_initial.cs",
+              "RelativeToolTip": "RestaurantApp\\Migrations\\20260316073742_initial.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T07:37:43.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BillingController.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\BillingController.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Controllers\\BillingController.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Controllers\\BillingController.cs",
+              "RelativeToolTip": "RestaurantApp\\Controllers\\BillingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:17:15.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IBillingService.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\IBillingService.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Interfaces\\IBillingService.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Interfaces\\IBillingService.cs",
+              "RelativeToolTip": "RestaurantApp\\Interfaces\\IBillingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:16:58.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DashboardTableDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\DashboardTableDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\DashboardTableDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\DashboardTableDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\DashboardTableDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T09:46:21.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DailyOrderSummaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\DailyOrderSummaryDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\DailyOrderSummaryDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\DailyOrderSummaryDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\DailyOrderSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:37:20.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OrderSummaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\OrderSummaryDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\OrderSummaryDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\OrderSummaryDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\OrderSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T16:25:54.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MenuItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\MenuItemDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\MenuItemDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\MenuItemDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\MenuItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:31:24.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20251023120818_AddOrderTables.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20251023120818_AddOrderTables.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Migrations\\20251023120818_AddOrderTables.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20251023120818_AddOrderTables.cs",
+              "RelativeToolTip": "RestaurantApp\\Migrations\\20251023120818_AddOrderTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:08:18.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "RestaurantApp\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T15:20:22.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ResourceNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Exceptions\\ResourceNotFoundException.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Exceptions\\ResourceNotFoundException.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Exceptions\\ResourceNotFoundException.cs",
+              "RelativeToolTip": "RestaurantApp\\Exceptions\\ResourceNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T15:20:32.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ErrorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\ErrorResponse.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Models\\ErrorResponse.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\ErrorResponse.cs",
+              "RelativeToolTip": "RestaurantApp\\Models\\ErrorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T15:20:56.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ValidationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Filters\\ValidationFilter.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Filters\\ValidationFilter.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Filters\\ValidationFilter.cs",
+              "RelativeToolTip": "RestaurantApp\\Filters\\ValidationFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T15:21:06.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "RestaurantApp\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T15:20:46.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DailySalesSummaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\DailySalesSummaryDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\DailySalesSummaryDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\DailySalesSummaryDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\DailySalesSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:45:49.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\OrderItemDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\OrderItemDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:08:57.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Billing.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\Billing.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Models\\Billing.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Models\\Billing.cs",
+              "RelativeToolTip": "RestaurantApp\\Models\\Billing.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:16:37.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\OrderDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\OrderDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\OrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:20:12.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "NEXT_FEATURES_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\NEXT_FEATURES_GUIDE.md",
+              "RelativeDocumentMoniker": "RestaurantApp\\NEXT_FEATURES_GUIDE.md",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\NEXT_FEATURES_GUIDE.md",
+              "RelativeToolTip": "RestaurantApp\\NEXT_FEATURES_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-05T16:08:52.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CHOOSE_NEXT_FEATURE.md",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\CHOOSE_NEXT_FEATURE.md",
+              "RelativeDocumentMoniker": "RestaurantApp\\CHOOSE_NEXT_FEATURE.md",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\CHOOSE_NEXT_FEATURE.md",
+              "RelativeToolTip": "RestaurantApp\\CHOOSE_NEXT_FEATURE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAN8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-05T16:09:22.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DECIDE_NOW.md",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DECIDE_NOW.md",
+              "RelativeDocumentMoniker": "RestaurantApp\\DECIDE_NOW.md",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DECIDE_NOW.md",
+              "RelativeToolTip": "RestaurantApp\\DECIDE_NOW.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-05T16:09:51.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20251021061138_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20251021061138_InitialCreate.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Migrations\\20251021061138_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\Migrations\\20251021061138_InitialCreate.cs",
+              "RelativeToolTip": "RestaurantApp\\Migrations\\20251021061138_InitialCreate.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:11:39.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "BillingDto.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\BillingDto.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\DTOs\\BillingDto.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\DTOs\\BillingDto.cs",
+              "RelativeToolTip": "RestaurantApp\\DTOs\\BillingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:16:43.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "READY_TO_USE.md",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\READY_TO_USE.md",
+              "RelativeDocumentMoniker": "RestaurantApp\\READY_TO_USE.md",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\READY_TO_USE.md",
+              "RelativeToolTip": "RestaurantApp\\READY_TO_USE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-02T12:24:11.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "LOGGING_COMPLETE.md",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\LOGGING_COMPLETE.md",
+              "RelativeDocumentMoniker": "RestaurantApp\\LOGGING_COMPLETE.md",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\LOGGING_COMPLETE.md",
+              "RelativeToolTip": "RestaurantApp\\LOGGING_COMPLETE.md",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAAL4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-02T12:23:47.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\WeatherForecast.cs",
+              "RelativeToolTip": "RestaurantApp\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:14:13.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RestaurantApp.http",
+              "DocumentMoniker": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\RestaurantApp.http",
+              "RelativeDocumentMoniker": "RestaurantApp\\RestaurantApp.http",
+              "ToolTip": "C:\\Users\\alekh\\Downloads\\Restuarant\\Api\\RestaurantApp\\RestaurantApp\\RestaurantApp.http",
+              "RelativeToolTip": "RestaurantApp\\RestaurantApp.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-25T16:19:14.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "plan-ee49b40a-d6e2-407f-ade8-92eb20bca537.md",
+              "DocumentMoniker": "C:\\Users\\alekh\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-ee49b40a-d6e2-407f-ade8-92eb20bca537.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-ee49b40a-d6e2-407f-ade8-92eb20bca537.md",
+              "ToolTip": "C:\\Users\\alekh\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-ee49b40a-d6e2-407f-ade8-92eb20bca537.md",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-ee49b40a-d6e2-407f-ade8-92eb20bca537.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-11T12:16:30.162Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

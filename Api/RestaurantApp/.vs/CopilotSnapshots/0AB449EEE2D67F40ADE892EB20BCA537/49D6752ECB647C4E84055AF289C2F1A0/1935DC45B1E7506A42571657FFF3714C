@@ -1,0 +1,85 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Serilog;
+using RestaurantApp.Data;
+using RestaurantApp.Interfaces;
+using RestaurantApp.Services;
+using RestaurantApp.Middleware;
+using RestaurantApp.Filters;
+
+// Read configuration first
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+// Configure Serilog from appsettings
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(configuration)
+    .CreateLogger();
+
+try
+{
+    Log.Information("? APPLICATION STARTING...");
+
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Use Serilog
+    builder.Host.UseSerilog();
+
+    // Add services to the container.
+    builder.Services.AddControllers(options =>
+    {
+        options.Filters.Add<ValidationFilter>();
+    });
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll",
+            builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+    });
+
+    builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+    builder.Services.AddScoped<ITableService, TableService>();
+    builder.Services.AddScoped<IMenuItemService, MenuItemService>();
+    builder.Services.AddScoped<IOrderService, OrderService>();
+    builder.Services.AddScoped<IBillingService, BillingService>();
+
+    Log.Information("? Services registered");
+
+    var app = builder.Build();
+
+    // Configure the HTTP request pipeline.
+    app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+    if (app.Environment.IsDevelopment())
+    {
+        Log.Information("? Development mode enabled");
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
+    app.UseHttpsRedirection();
+    app.UseCors("AllowAll");
+    app.UseAuthorization();
+    app.MapControllers();
+
+    Log.Information( "? APPLICATION STARTED SUCCESSFULLY");
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "? APPLICATION CRASHED");
+    throw;
+}
+finally
+{
+    Log.Information("? APPLICATION STOPPED");
+    Log.CloseAndFlush();
+}

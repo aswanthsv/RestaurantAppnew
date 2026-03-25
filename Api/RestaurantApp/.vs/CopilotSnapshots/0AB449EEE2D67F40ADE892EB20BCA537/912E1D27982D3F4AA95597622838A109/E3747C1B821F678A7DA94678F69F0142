@@ -1,0 +1,113 @@
+﻿using Microsoft.EntityFrameworkCore;
+using RestaurantApp.Data;
+using RestaurantApp.DTOs;
+using RestaurantApp.Interfaces;
+using RestaurantApp.Models;
+
+namespace RestaurantApp.Services
+{
+    public class BillingService : IBillingService
+    {
+        private readonly AppDbContext _context;
+
+        public BillingService(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<BillingDto> CreateBillingAsync(BillingDto dto)
+        {
+            var billing = new Billing
+            {
+                OrderId = dto.OrderId,
+                Amount = dto.Amount,
+                PaymentStatus = dto.PaymentStatus ?? "Pending",
+                PaymentMethod = dto.PaymentMethod ?? "",
+                Notes = dto.Notes
+            };
+
+            _context.Billings.Add(billing);
+            await _context.SaveChangesAsync();
+
+            dto.Id = billing.Id;
+            dto.BillingDate = billing.BillingDate;
+            return dto;
+        }
+
+        public async Task<IEnumerable<BillingDto>> GetAllAsync()
+        {
+            var billings = await _context.Billings
+                .Include(b => b.Order)
+                .ToListAsync();
+
+            return billings.Select(b => new BillingDto
+            {
+                Id = b.Id,
+                OrderId = b.OrderId,
+                Amount = b.Amount,
+                BillingDate = b.BillingDate,
+                PaymentStatus = b.PaymentStatus,
+                PaymentMethod = b.PaymentMethod,
+                Notes = b.Notes
+            });
+        }
+
+        public async Task<BillingDto?> GetByIdAsync(int id)
+        {
+            var billing = await _context.Billings
+                .Include(b => b.Order)
+                .FirstOrDefaultAsync(b => b.Id == id);
+
+            if (billing == null) return null;
+
+            return new BillingDto
+            {
+                Id = billing.Id,
+                OrderId = billing.OrderId,
+                Amount = billing.Amount,
+                BillingDate = billing.BillingDate,
+                PaymentStatus = billing.PaymentStatus,
+                PaymentMethod = billing.PaymentMethod,
+                Notes = billing.Notes
+            };
+        }
+
+        public async Task<IEnumerable<BillingDto>> GetByOrderIdAsync(int orderId)
+        {
+            var billings = await _context.Billings
+                .Where(b => b.OrderId == orderId)
+                .ToListAsync();
+
+            return billings.Select(b => new BillingDto
+            {
+                Id = b.Id,
+                OrderId = b.OrderId,
+                Amount = b.Amount,
+                BillingDate = b.BillingDate,
+                PaymentStatus = b.PaymentStatus,
+                PaymentMethod = b.PaymentMethod,
+                Notes = b.Notes
+            });
+        }
+
+        public async Task<bool> UpdatePaymentStatusAsync(int id, string paymentStatus)
+        {
+            var billing = await _context.Billings.FindAsync(id);
+            if (billing == null) return false;
+
+            billing.PaymentStatus = paymentStatus;
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> DeleteBillingAsync(int id)
+        {
+            var billing = await _context.Billings.FindAsync(id);
+            if (billing == null) return false;
+
+            _context.Billings.Remove(billing);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+    }
+}

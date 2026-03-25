@@ -1,0 +1,90 @@
+[2026-03-20 15:51:08.603 +05:30] [INF] ? APPLICATION STARTING...
+[2026-03-20 15:51:09.228 +05:30] [INF] ? Services registered
+[2026-03-20 15:51:09.346 +05:30] [INF] ? Development mode enabled
+[2026-03-20 15:51:09.560 +05:30] [INF] ? APPLICATION STARTED SUCCESSFULLY
+[2026-03-20 15:51:09.864 +05:30] [INF] Now listening on: https://localhost:7269
+[2026-03-20 15:51:09.868 +05:30] [INF] Now listening on: http://localhost:5067
+[2026-03-20 15:51:09.990 +05:30] [INF] Application started. Press Ctrl+C to shut down.
+[2026-03-20 15:51:09.990 +05:30] [INF] Hosting environment: Development
+[2026-03-20 15:51:09.990 +05:30] [INF] Content root path: C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp
+[2026-03-20 15:51:10.429 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/swagger/index.html - null null
+[2026-03-20 15:51:10.639 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/_vs/browserLink - null null
+[2026-03-20 15:51:10.639 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/_framework/aspnetcore-browser-refresh.js - null null
+[2026-03-20 15:51:10.630 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/swagger/index.html - 200 null text/html;charset=utf-8 207.9977ms
+[2026-03-20 15:51:10.660 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 20.9549ms
+[2026-03-20 15:51:10.694 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.4897ms
+[2026-03-20 15:51:10.727 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/swagger/v1/swagger.json - null null
+[2026-03-20 15:51:10.746 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.5752ms
+[2026-03-20 15:51:19.456 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/api/Order/get-top-D?n=3 - null null
+[2026-03-20 15:51:19.463 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.OrderController.GetTopD (RestaurantApp)'
+[2026-03-20 15:51:19.496 +05:30] [INF] Route matched with {action = "GetTopD", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTopD(Int32) on controller RestaurantApp.Controllers.OrderController (RestaurantApp).
+[2026-03-20 15:51:20.176 +05:30] [WRN] No store type was specified for the decimal property 'TotalRevenue' on entity type 'DailySalesSummaryDto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-03-20 15:51:20.177 +05:30] [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Billing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-03-20 15:51:20.177 +05:30] [WRN] No store type was specified for the decimal property 'Price' on entity type 'MenuItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-03-20 15:51:20.177 +05:30] [WRN] No store type was specified for the decimal property 'Number' on entity type 'Personal'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-03-20 15:51:21.903 +05:30] [INF] Executed DbCommand (927ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_0) (
+    SELECT TOP(1) [m].[Name]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [MenuItems] AS [m] ON [o0].[MenuItemId] = [m].[Id]
+    WHERE [o].[MenuItemId] = [o0].[MenuItemId]) AS [Name], COALESCE(SUM([o].[Quantity]), 0) AS [totals]
+FROM [OrderItems] AS [o]
+GROUP BY [o].[MenuItemId]
+ORDER BY COALESCE(SUM([o].[Quantity]), 0) DESC
+[2026-03-20 15:51:21.938 +05:30] [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantApp.DTOs.TopDDto, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-03-20 15:51:21.946 +05:30] [INF] Executed action RestaurantApp.Controllers.OrderController.GetTopD (RestaurantApp) in 2446.2387ms
+[2026-03-20 15:51:21.946 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.OrderController.GetTopD (RestaurantApp)'
+[2026-03-20 15:51:21.953 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/api/Order/get-top-D?n=3 - 200 null application/json; charset=utf-8 2497.0607ms
+[2026-03-20 15:51:34.029 +05:30] [INF] ? APPLICATION STARTING...
+[2026-03-20 15:51:34.360 +05:30] [INF] ? Services registered
+[2026-03-20 15:51:34.436 +05:30] [INF] ? Development mode enabled
+[2026-03-20 15:51:34.984 +05:30] [INF] ? APPLICATION STARTED SUCCESSFULLY
+[2026-03-20 15:51:35.243 +05:30] [INF] Now listening on: https://localhost:7269
+[2026-03-20 15:51:35.246 +05:30] [INF] Now listening on: http://localhost:5067
+[2026-03-20 15:51:35.388 +05:30] [INF] Application started. Press Ctrl+C to shut down.
+[2026-03-20 15:51:35.392 +05:30] [INF] Hosting environment: Development
+[2026-03-20 15:51:35.392 +05:30] [INF] Content root path: C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp
+[2026-03-20 15:51:35.942 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/swagger/index.html - null null
+[2026-03-20 15:51:36.137 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/_framework/aspnetcore-browser-refresh.js - null null
+[2026-03-20 15:51:36.139 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/swagger/index.html - 200 null text/html;charset=utf-8 195.8646ms
+[2026-03-20 15:51:36.142 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/_vs/browserLink - null null
+[2026-03-20 15:51:36.186 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 48.4255ms
+[2026-03-20 15:51:36.237 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.325ms
+[2026-03-20 15:51:36.272 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/swagger/v1/swagger.json - null null
+[2026-03-20 15:51:36.294 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.8963ms
+[2026-03-20 15:51:41.716 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/api/Order/get-top-D - null null
+[2026-03-20 15:51:41.730 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.OrderController.GetTopD (RestaurantApp)'
+[2026-03-20 15:51:41.763 +05:30] [INF] Route matched with {action = "GetTopD", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTopD() on controller RestaurantApp.Controllers.OrderController (RestaurantApp).
+[2026-03-20 15:51:42.475 +05:30] [WRN] No store type was specified for the decimal property 'TotalRevenue' on entity type 'DailySalesSummaryDto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-03-20 15:51:42.475 +05:30] [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Billing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-03-20 15:51:42.475 +05:30] [WRN] No store type was specified for the decimal property 'Price' on entity type 'MenuItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-03-20 15:51:42.476 +05:30] [WRN] No store type was specified for the decimal property 'Number' on entity type 'Personal'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-03-20 15:51:43.421 +05:30] [INF] Executed DbCommand (57ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_0) (
+    SELECT TOP(1) [m].[Name]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [MenuItems] AS [m] ON [o0].[MenuItemId] = [m].[Id]
+    WHERE [o].[MenuItemId] = [o0].[MenuItemId]) AS [Name], COALESCE(SUM([o].[Quantity]), 0) AS [totals]
+FROM [OrderItems] AS [o]
+GROUP BY [o].[MenuItemId]
+ORDER BY COALESCE(SUM([o].[Quantity]), 0) DESC
+[2026-03-20 15:51:43.459 +05:30] [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantApp.DTOs.TopDDto, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-03-20 15:51:43.469 +05:30] [INF] Executed action RestaurantApp.Controllers.OrderController.GetTopD (RestaurantApp) in 1701.9387ms
+[2026-03-20 15:51:43.470 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.OrderController.GetTopD (RestaurantApp)'
+[2026-03-20 15:51:43.479 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/api/Order/get-top-D - 200 null application/json; charset=utf-8 1763.5443ms
+[2026-03-20 15:52:00.400 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/api/Order - null null
+[2026-03-20 15:52:00.404 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.OrderController.GetAll (RestaurantApp)'
+[2026-03-20 15:52:00.412 +05:30] [INF] Route matched with {action = "GetAll", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantApp.Controllers.OrderController (RestaurantApp).
+[2026-03-20 15:52:00.516 +05:30] [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[OrderTime], [o].[Status], [o].[TableId], [s].[Id], [s].[MenuItemId], [s].[OrderId], [s].[Quantity], [s].[Id0], [s].[Category], [s].[Name], [s].[Price]
+FROM [Orders] AS [o]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[MenuItemId], [o0].[OrderId], [o0].[Quantity], [m].[Id] AS [Id0], [m].[Category], [m].[Name], [m].[Price]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [MenuItems] AS [m] ON [o0].[MenuItemId] = [m].[Id]
+) AS [s] ON [o].[Id] = [s].[OrderId]
+ORDER BY [o].[Id], [s].[Id]
+[2026-03-20 15:52:00.591 +05:30] [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[RestaurantApp.Models.Order, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestaurantApp.DTOs.OrderDto, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-03-20 15:52:00.596 +05:30] [INF] Executed action RestaurantApp.Controllers.OrderController.GetAll (RestaurantApp) in 183.9515ms
+[2026-03-20 15:52:00.596 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.OrderController.GetAll (RestaurantApp)'
+[2026-03-20 15:52:00.597 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/api/Order - 200 null application/json; charset=utf-8 197.1963ms

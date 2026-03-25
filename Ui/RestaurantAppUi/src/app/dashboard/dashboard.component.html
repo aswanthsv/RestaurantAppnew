@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">📊 Restaurant Dashboard</h2>
+
+  <table class="table table-hover shadow-sm">
+    <thead class="table-dark">
+      <tr>
+        <th>Table ID</th>
+        <th>Status</th>
+        <th>Current Order ID</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of tables">
+        <td>{{ t.tableId }}</td>
+        <td>
+          <span [ngClass]="{
+            'badge bg-success': t.status === 'Available',
+            'badge bg-warning text-dark': t.status === 'Pending',
+            'badge bg-info': t.status === 'Served'
+          }">
+            {{ t.status }}
+          </span>
+        </td>
+        <td>{{ t.currentOrderId || '-' }}</td>
+        <td>{{ t.totalAmount ? (t.totalAmount | currency:'INR') : '-' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

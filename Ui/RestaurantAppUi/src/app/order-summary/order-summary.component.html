@@ -1,0 +1,39 @@
+<div class="container mt-4">
+  <h2 class="mb-3 text-center">🍽️ Order Summary</h2>
+
+  <div *ngIf="orderSummary">
+    <div class="card shadow p-3 mb-4">
+      <h4>Table: {{ orderSummary.tableId }}</h4>
+      <p>Status: <strong>{{ orderSummary.status }}</strong></p>
+
+      <table class="table table-striped mt-3">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of orderSummary.items">
+            <td>{{ item.itemName }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.price | currency:'INR' }}</td>
+            <td>{{ item.subtotal | currency:'INR' }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="text-end mt-3">
+        <h4>Total: <span class="text-success">{{ orderSummary.totalAmount | currency:'INR' }}</span></h4>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!orderSummary" class="text-center mt-5">
+    <p>Enter an Order ID to view summary:</p>
+    <input type="number" [(ngModel)]="orderId" class="form-control w-50 mx-auto mb-3" placeholder="Order ID">
+    <button class="btn btn-primary" (click)="loadSummary()">Load Summary</button>
+  </div>
+</div>

@@ -1,0 +1,356 @@
+[2026-01-05 17:02:55.303 +05:30] [INF] ? APPLICATION STARTING...
+[2026-01-05 17:02:55.825 +05:30] [INF] ? Services registered
+[2026-01-05 17:02:56.057 +05:30] [INF] ? Development mode enabled
+[2026-01-05 17:02:56.299 +05:30] [INF] ? APPLICATION STARTED SUCCESSFULLY
+[2026-01-05 17:02:56.655 +05:30] [INF] Now listening on: https://localhost:7269
+[2026-01-05 17:02:56.658 +05:30] [INF] Now listening on: http://localhost:5067
+[2026-01-05 17:02:56.752 +05:30] [INF] Application started. Press Ctrl+C to shut down.
+[2026-01-05 17:02:56.753 +05:30] [INF] Hosting environment: Development
+[2026-01-05 17:02:56.753 +05:30] [INF] Content root path: C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp
+[2026-01-05 17:02:57.517 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/swagger/index.html - null null
+[2026-01-05 17:02:57.897 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/_framework/aspnetcore-browser-refresh.js - null null
+[2026-01-05 17:02:57.897 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/_vs/browserLink - null null
+[2026-01-05 17:02:57.911 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/swagger/index.html - 200 null text/html;charset=utf-8 402.8584ms
+[2026-01-05 17:02:57.915 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 18.3991ms
+[2026-01-05 17:02:57.956 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.2621ms
+[2026-01-05 17:02:57.997 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/swagger/v1/swagger.json - null null
+[2026-01-05 17:02:58.016 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.9031ms
+[2026-01-05 17:27:08.630 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/api/Billing - null null
+[2026-01-05 17:27:08.656 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.BillingController.GetAll (RestaurantApp)'
+[2026-01-05 17:27:08.705 +05:30] [INF] Route matched with {action = "GetAll", controller = "Billing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantApp.Controllers.BillingController (RestaurantApp).
+[2026-01-05 17:27:09.004 +05:30] [INF] ?? GET /api/billing - GetAll
+[2026-01-05 17:27:09.008 +05:30] [INF] ? GetAllBillings START
+[2026-01-05 17:27:09.824 +05:30] [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Billing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-01-05 17:27:09.825 +05:30] [WRN] No store type was specified for the decimal property 'Price' on entity type 'MenuItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2026-01-05 17:27:11.256 +05:30] [ERR] Failed executing DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Amount], [b].[BillingDate], [b].[Notes], [b].[OrderId], [b].[PaymentMethod], [b].[PaymentStatus], [o].[Id], [o].[OrderTime], [o].[Status], [o].[TableId]
+FROM [Billings] AS [b]
+INNER JOIN [Orders] AS [o] ON [b].[OrderId] = [o].[Id]
+[2026-01-05 17:27:11.293 +05:30] [ERR] An exception occurred while iterating over the results of a query for context type 'RestaurantApp.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Billings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:2223cdf3-d879-4f57-8417-81ee097a9d20
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Billings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:2223cdf3-d879-4f57-8417-81ee097a9d20
+Error Number:208,State:1,Class:16
+[2026-01-05 17:27:11.368 +05:30] [ERR] ? GetAllBillings FAILED after 2360ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Billings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RestaurantApp.Services.BillingService.GetAllAsync() in C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp\Services\BillingService.cs:line 62
+ClientConnectionId:2223cdf3-d879-4f57-8417-81ee097a9d20
+Error Number:208,State:1,Class:16
+[2026-01-05 17:27:11.471 +05:30] [ERR] ? GET /api/billing FAILED in 2467ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Billings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RestaurantApp.Services.BillingService.GetAllAsync() in C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp\Services\BillingService.cs:line 62
+   at RestaurantApp.Controllers.BillingController.GetAll() in C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp\Controllers\BillingController.cs:line 50
+ClientConnectionId:2223cdf3-d879-4f57-8417-81ee097a9d20
+Error Number:208,State:1,Class:16
+[2026-01-05 17:27:11.520 +05:30] [INF] Executed action RestaurantApp.Controllers.BillingController.GetAll (RestaurantApp) in 2810.3137ms
+[2026-01-05 17:27:11.523 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.BillingController.GetAll (RestaurantApp)'
+[2026-01-05 17:27:11.529 +05:30] [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Billings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RestaurantApp.Services.BillingService.GetAllAsync() in C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp\Services\BillingService.cs:line 62
+   at RestaurantApp.Controllers.BillingController.GetAll() in C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp\Controllers\BillingController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:2223cdf3-d879-4f57-8417-81ee097a9d20
+Error Number:208,State:1,Class:16
+[2026-01-05 17:27:11.579 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/api/Billing - 500 null text/plain; charset=utf-8 2948.6699ms
+[2026-01-05 17:27:17.185 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/api/MenuItem - null null
+[2026-01-05 17:27:17.188 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.MenuItemController.GetAll (RestaurantApp)'
+[2026-01-05 17:27:17.195 +05:30] [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantApp.Controllers.MenuItemController (RestaurantApp).
+[2026-01-05 17:27:17.265 +05:30] [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+[2026-01-05 17:27:17.360 +05:30] [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[RestaurantApp.Models.MenuItem, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestaurantApp.DTOs.MenuItemDto, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-01-05 17:27:17.372 +05:30] [INF] Executed action RestaurantApp.Controllers.MenuItemController.GetAll (RestaurantApp) in 176.6065ms
+[2026-01-05 17:27:17.374 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.MenuItemController.GetAll (RestaurantApp)'
+[2026-01-05 17:27:17.375 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/api/MenuItem - 200 null application/json; charset=utf-8 190.0903ms
+[2026-01-05 17:27:23.616 +05:30] [INF] Request starting HTTP/2 POST https://localhost:7269/api/MenuItem - application/json 71
+[2026-01-05 17:27:23.645 +05:30] [INF] CORS policy execution successful.
+[2026-01-05 17:27:23.648 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.MenuItemController.Create (RestaurantApp)'
+[2026-01-05 17:27:23.670 +05:30] [INF] Route matched with {action = "Create", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(RestaurantApp.DTOs.MenuItemDto) on controller RestaurantApp.Controllers.MenuItemController (RestaurantApp).
+[2026-01-05 17:27:24.041 +05:30] [INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MenuItems] ([Category], [Name], [Price])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+[2026-01-05 17:27:24.081 +05:30] [INF] Executing CreatedAtActionResult, writing value of type 'RestaurantApp.DTOs.MenuItemDto'.
+[2026-01-05 17:27:24.121 +05:30] [INF] Executed action RestaurantApp.Controllers.MenuItemController.Create (RestaurantApp) in 450.8764ms
+[2026-01-05 17:27:24.122 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.MenuItemController.Create (RestaurantApp)'
+[2026-01-05 17:27:24.122 +05:30] [INF] Request finished HTTP/2 POST https://localhost:7269/api/MenuItem - 201 null application/json; charset=utf-8 506.682ms
+[2026-01-05 17:27:51.845 +05:30] [INF] Request starting HTTP/2 PUT https://localhost:7269/api/MenuItem/1 - application/json 69
+[2026-01-05 17:27:51.878 +05:30] [INF] CORS policy execution successful.
+[2026-01-05 17:27:51.882 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.MenuItemController.Update (RestaurantApp)'
+[2026-01-05 17:27:51.900 +05:30] [INF] Route matched with {action = "Update", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, RestaurantApp.DTOs.MenuItemDto) on controller RestaurantApp.Controllers.MenuItemController (RestaurantApp).
+[2026-01-05 17:27:51.986 +05:30] [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__p_0
+[2026-01-05 17:27:52.005 +05:30] [INF] Executed DbCommand (9ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MenuItems] SET [Category] = @p0, [Name] = @p1, [Price] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+[2026-01-05 17:27:52.009 +05:30] [INF] Executing OkObjectResult, writing value of type 'RestaurantApp.DTOs.MenuItemDto'.
+[2026-01-05 17:27:52.010 +05:30] [INF] Executed action RestaurantApp.Controllers.MenuItemController.Update (RestaurantApp) in 108.9845ms
+[2026-01-05 17:27:52.010 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.MenuItemController.Update (RestaurantApp)'
+[2026-01-05 17:27:52.010 +05:30] [INF] Request finished HTTP/2 PUT https://localhost:7269/api/MenuItem/1 - 200 null application/json; charset=utf-8 165.8963ms
+[2026-01-05 17:28:00.174 +05:30] [INF] Request starting HTTP/2 POST https://localhost:7269/api/Order - application/json 124
+[2026-01-05 17:28:00.176 +05:30] [INF] CORS policy execution successful.
+[2026-01-05 17:28:00.180 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.OrderController.Create (RestaurantApp)'
+[2026-01-05 17:28:00.190 +05:30] [INF] Route matched with {action = "Create", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(RestaurantApp.DTOs.OrderDto) on controller RestaurantApp.Controllers.OrderController (RestaurantApp).
+[2026-01-05 17:28:00.320 +05:30] [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([OrderTime], [Status], [TableId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+[2026-01-05 17:28:00.344 +05:30] [ERR] An exception occurred in the database while saving changes for context type 'RestaurantApp.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Orders_Tables_TableId". The conflict occurred in database "RestaurantDB", table "dbo.Tables", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:2223cdf3-d879-4f57-8417-81ee097a9d20
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Orders_Tables_TableId". The conflict occurred in database "RestaurantDB", table "dbo.Tables", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:2223cdf3-d879-4f57-8417-81ee097a9d20
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-01-05 17:28:00.501 +05:30] [INF] Executed action RestaurantApp.Controllers.OrderController.Create (RestaurantApp) in 309.4861ms
+[2026-01-05 17:28:00.502 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.OrderController.Create (RestaurantApp)'
+[2026-01-05 17:28:00.505 +05:30] [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Orders_Tables_TableId". The conflict occurred in database "RestaurantDB", table "dbo.Tables", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:2223cdf3-d879-4f57-8417-81ee097a9d20
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at RestaurantApp.Services.OrderService.CreateOrderAsync(OrderDto dto) in C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp\Services\OrderService.cs:line 32
+   at RestaurantApp.Controllers.OrderController.Create(OrderDto dto) in C:\Users\alekh\Downloads\Restuarant\Api\RestaurantApp\RestaurantApp\Controllers\OrderController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2026-01-05 17:28:00.517 +05:30] [INF] Request finished HTTP/2 POST https://localhost:7269/api/Order - 500 null text/plain; charset=utf-8 342.896ms
+[2026-01-05 17:28:08.596 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/api/Order - null null
+[2026-01-05 17:28:08.597 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.OrderController.GetAll (RestaurantApp)'
+[2026-01-05 17:28:08.603 +05:30] [INF] Route matched with {action = "GetAll", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantApp.Controllers.OrderController (RestaurantApp).
+[2026-01-05 17:28:08.697 +05:30] [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[OrderTime], [o].[Status], [o].[TableId], [s].[Id], [s].[MenuItemId], [s].[OrderId], [s].[Quantity], [s].[Id0], [s].[Category], [s].[Name], [s].[Price]
+FROM [Orders] AS [o]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[MenuItemId], [o0].[OrderId], [o0].[Quantity], [m].[Id] AS [Id0], [m].[Category], [m].[Name], [m].[Price]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [MenuItems] AS [m] ON [o0].[MenuItemId] = [m].[Id]
+) AS [s] ON [o].[Id] = [s].[OrderId]
+ORDER BY [o].[Id], [s].[Id]
+[2026-01-05 17:28:08.716 +05:30] [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[RestaurantApp.Models.Order, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestaurantApp.DTOs.OrderDto, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-01-05 17:28:08.721 +05:30] [INF] Executed action RestaurantApp.Controllers.OrderController.GetAll (RestaurantApp) in 117.1774ms
+[2026-01-05 17:28:08.722 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.OrderController.GetAll (RestaurantApp)'
+[2026-01-05 17:28:08.722 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/api/Order - 200 null application/json; charset=utf-8 126.5559ms
+[2026-01-05 17:28:14.897 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/api/Table - null null
+[2026-01-05 17:28:14.899 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.TableController.GetAll (RestaurantApp)'
+[2026-01-05 17:28:14.904 +05:30] [INF] Route matched with {action = "GetAll", controller = "Table"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantApp.Controllers.TableController (RestaurantApp).
+[2026-01-05 17:28:14.925 +05:30] [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsOccupied], [t].[Seats], [t].[TableNumber]
+FROM [Tables] AS [t]
+[2026-01-05 17:28:14.940 +05:30] [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[RestaurantApp.Models.Table, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestaurantApp.DTOs.TableDto, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-01-05 17:28:14.944 +05:30] [INF] Executed action RestaurantApp.Controllers.TableController.GetAll (RestaurantApp) in 39.1959ms
+[2026-01-05 17:28:14.946 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.TableController.GetAll (RestaurantApp)'
+[2026-01-05 17:28:14.948 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/api/Table - 200 null application/json; charset=utf-8 50.7113ms
+[2026-01-05 17:28:21.903 +05:30] [INF] Request starting HTTP/2 POST https://localhost:7269/api/Table - application/json 69
+[2026-01-05 17:28:21.904 +05:30] [INF] CORS policy execution successful.
+[2026-01-05 17:28:21.920 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.TableController.Create (RestaurantApp)'
+[2026-01-05 17:28:21.924 +05:30] [INF] Route matched with {action = "Create", controller = "Table"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(RestaurantApp.DTOs.TableDto) on controller RestaurantApp.Controllers.TableController (RestaurantApp).
+[2026-01-05 17:28:21.954 +05:30] [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tables] ([IsOccupied], [Seats], [TableNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+[2026-01-05 17:28:21.957 +05:30] [INF] Executing CreatedAtActionResult, writing value of type 'RestaurantApp.DTOs.TableDto'.
+[2026-01-05 17:28:21.959 +05:30] [INF] Executed action RestaurantApp.Controllers.TableController.Create (RestaurantApp) in 33.9178ms
+[2026-01-05 17:28:21.959 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.TableController.Create (RestaurantApp)'
+[2026-01-05 17:28:21.960 +05:30] [INF] Request finished HTTP/2 POST https://localhost:7269/api/Table - 201 null application/json; charset=utf-8 57.3509ms
+[2026-01-05 17:28:31.148 +05:30] [INF] Request starting HTTP/2 GET https://localhost:7269/api/Table/dashboard - null null
+[2026-01-05 17:28:31.154 +05:30] [INF] Executing endpoint 'RestaurantApp.Controllers.TableController.GetDashboard (RestaurantApp)'
+[2026-01-05 17:28:31.160 +05:30] [INF] Route matched with {action = "GetDashboard", controller = "Table"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboard() on controller RestaurantApp.Controllers.TableController (RestaurantApp).
+[2026-01-05 17:28:31.188 +05:30] [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+[2026-01-05 17:28:31.233 +05:30] [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsOccupied], [t].[Seats], [t].[TableNumber], [s0].[Id], [s0].[OrderTime], [s0].[Status], [s0].[TableId], [s0].[Id0], [s0].[MenuItemId], [s0].[OrderId], [s0].[Quantity], [s0].[Id00], [s0].[Category], [s0].[Name], [s0].[Price]
+FROM [Tables] AS [t]
+LEFT JOIN (
+    SELECT [o].[Id], [o].[OrderTime], [o].[Status], [o].[TableId], [s].[Id] AS [Id0], [s].[MenuItemId], [s].[OrderId], [s].[Quantity], [s].[Id0] AS [Id00], [s].[Category], [s].[Name], [s].[Price]
+    FROM [Orders] AS [o]
+    LEFT JOIN (
+        SELECT [o0].[Id], [o0].[MenuItemId], [o0].[OrderId], [o0].[Quantity], [m].[Id] AS [Id0], [m].[Category], [m].[Name], [m].[Price]
+        FROM [OrderItems] AS [o0]
+        INNER JOIN [MenuItems] AS [m] ON [o0].[MenuItemId] = [m].[Id]
+    ) AS [s] ON [o].[Id] = [s].[OrderId]
+) AS [s0] ON [t].[Id] = [s0].[TableId]
+ORDER BY [t].[Id], [s0].[Id], [s0].[Id0]
+[2026-01-05 17:28:31.253 +05:30] [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantApp.DTOs.DashboardTableDto, RestaurantApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-01-05 17:28:31.262 +05:30] [INF] Executed action RestaurantApp.Controllers.TableController.GetDashboard (RestaurantApp) in 101.5832ms
+[2026-01-05 17:28:31.263 +05:30] [INF] Executed endpoint 'RestaurantApp.Controllers.TableController.GetDashboard (RestaurantApp)'
+[2026-01-05 17:28:31.263 +05:30] [INF] Request finished HTTP/2 GET https://localhost:7269/api/Table/dashboard - 200 null application/json; charset=utf-8 115.571ms

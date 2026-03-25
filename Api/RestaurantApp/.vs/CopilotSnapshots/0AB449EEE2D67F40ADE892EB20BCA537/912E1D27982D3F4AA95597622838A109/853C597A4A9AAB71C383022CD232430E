@@ -1,0 +1,63 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using RestaurantApp.DTOs;
+using RestaurantApp.Interfaces;
+
+namespace RestaurantApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class BillingController : ControllerBase
+    {
+        private readonly IBillingService _service;
+
+        public BillingController(IBillingService service)
+        {
+            _service = service;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(BillingDto dto)
+        {
+            var result = await _service.CreateBillingAsync(dto);
+            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+        }
+        
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var billings = await _service.GetAllAsync();
+            return Ok(billings);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var billing = await _service.GetByIdAsync(id);
+            if (billing == null) return NotFound();
+            return Ok(billing);
+        }
+
+        [HttpGet("order/{orderId}")]
+        public async Task<IActionResult> GetByOrderId(int orderId)
+        {
+            var billings = await _service.GetByOrderIdAsync(orderId);
+            return Ok(billings);
+        }
+
+        [HttpPut("{id}/payment-status")]
+        public async Task<IActionResult> UpdatePaymentStatus(int id, [FromQuery] string paymentStatus)
+        {
+            var updated = await _service.UpdatePaymentStatusAsync(id, paymentStatus);
+            if (!updated) return NotFound();
+            return Ok(new { message = "Payment status updated successfully" });
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBilling(int id)
+        {
+            var deleted = await _service.DeleteBillingAsync(id);
+            if (!deleted) return NotFound();
+            return Ok(new { message = "Billing deleted successfully" });
+        }
+    }
+}

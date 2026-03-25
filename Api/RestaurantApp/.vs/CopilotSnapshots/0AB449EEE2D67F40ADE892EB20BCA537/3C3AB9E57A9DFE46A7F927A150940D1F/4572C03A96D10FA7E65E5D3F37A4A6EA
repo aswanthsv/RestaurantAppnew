@@ -1,0 +1,14 @@
+﻿using RestaurantApp.DTOs;
+
+namespace RestaurantApp.Interfaces
+{
+    public interface IBillingService
+    {
+        Task<BillingDto> CreateBillingAsync(BillingDto dto);
+        Task<IEnumerable<BillingDto>> GetAllAsync();
+        Task<BillingDto?> GetByIdAsync(int id);
+        Task<IEnumerable<BillingDto>> GetByOrderIdAsync(int orderId);
+        Task<bool> UpdatePaymentStatusAsync(int id, string paymentStatus);
+        Task<bool> DeleteBillingAsync(int id);
+    }
+}
